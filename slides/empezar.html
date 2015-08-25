@@ -1,0 +1,54 @@
+<section>
+    <h2>¡Esta bien! ... me convenciste</h2>
+    <h3>¿Como empiezo?</h3>
+</section>
+
+<section>
+    <h2>Instalar Sculpin</h2>
+    <pre>
+        <code class="bash">
+            curl -O https://download.sculpin.io/sculpin.phar
+            chmod +x sculpin.phar
+            mv sculpin.phar ~/bin/sculpin
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Descargar Kit de inicio</h2>
+    <pre>
+        <code class="bash">
+            cd ~
+            git clone https://github.com/sculpin/sculpin-blog-skeleton.git static-site-folder
+            cd static-site-folder
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Instalar dependencias</h2>
+    <pre>
+        <code class="bash">
+            cd ~/static-site-folder
+            sculpin install
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Ejecutar Sculpin</h2>
+    <pre>
+        <code class="bash">
+            sculpin generate --watch --server
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2>Crear sitio de producción</h2>
+    <pre>
+        <code>
+            sculpin generate --env=prod
+        </code>
+    </pre>
+</section>

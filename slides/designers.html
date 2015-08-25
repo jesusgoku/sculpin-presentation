@@ -1,0 +1,54 @@
+<section>
+    <h2>Diseñadores</h2>
+    <h3>Construir templates con Twig</h3>
+    <p>Twig for Designers</p>
+    <p><a href="http://twig.sensiolabs.org/doc/templates.html" target="_blank">http://twig.sensiolabs.org/doc/templates.html</a></p>
+</section>
+
+<section>
+    <h2>Ejemplos</h2>
+    <pre>
+        <code class="twig">
+            &lt;body&gt;
+                <header>
+                    <h1>Título de la sitio</h1>
+                </header>
+
+                <div id="main">&lbrace;&percnt; block main &percnt;&rbrace;&lbrace;&percnt; endblock &percnt;&rbrace;</div>
+
+                <footer>
+                    <p>&amp;copy; Algunos derechos reservados.</p>
+                </footer>
+            &lt;/body&gt;
+        </code>
+    </pre>
+    <p><small>Definiendo una zona extensible</small></p>
+</section>
+
+
+<section>
+    <h2>Ejemplos</h2>
+    <pre>
+        <code class="twig">
+            &lbrace;&percnt; extends 'layout.html.twig' &percnt;&rbrace;
+
+            &lbrace;&percnt; block main &percnt;&rbrace;
+                &lt;h1&gt;Titulo contenido&lt;/h1&gt;
+                &lt;p&gt;¿Muy difícil? ... tranquilo ya lo comprenderás.&lt;/p&gt;
+            &lbrace;&percnt; block main &percnt;&rbrace;
+        </code>
+    </pre>
+    <p>
+        <small>Extendiendo el template del ejemplo anterior.</small>
+    </p>
+</section>
+
+<section>
+    <h2>Ejemplos</h2>
+    <pre>
+        <code class="twig">
+            &lbrace;&percnt; include '_partial.html.twig' &percnt;&rbrace;
+        </code>
+    </pre>
+    <p><small>Incluyendo un partial (Trozo de código reutilizable).</small></p>
+</section>
