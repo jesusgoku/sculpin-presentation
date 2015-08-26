@@ -6,3 +6,7 @@
 .reveal .text-small {
     font-size: 0.6em;
 }
+
+.reveal .table-comparatives tbody td {
+    vertical-align: top;
+}

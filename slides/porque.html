@@ -4,12 +4,34 @@
 
 <section>
     <h2>¿Con HTML estático? ... ¡Mala idea!</h2>
-    <ul>
-        <li>Las requerimientos siempre estan cambiando.</li>
-        <li>Por lo anterior, los sitios también lo hacen.</li>
-        <li>HTML no tiene una forma de abstraer estructuras repetitivas.</li>
-        <li>... O incluir trozos de HTML</li>
-    </ul>
+    <table class="table-comparatives">
+        <thead>
+        <tr>
+            <th width="50%">Beneficios</th>
+            <th width="50%">Contras</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <ul class="text-small">
+                    <li>Mayor Seguridad</li>
+                    <li>Mayor Velocidad</li>
+                    <li>Desarrollo inicial sencillo</li>
+                </ul>
+            </td>
+            <td>
+                <ul class="text-small">
+                    <li>Mantención lenta</li>
+                    <li>Las requerimientos siempre estan cambiando.</li>
+                    <li>Por lo anterior, los sitios también lo hacen.</li>
+                    <li>HTML no tiene una forma de abstraer estructuras repetitivas.</li>
+                    <li>... O incluir trozos de HTML</li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </section>
 
 <section>
@@ -17,8 +39,8 @@
     <table>
         <thead>
         <tr>
-            <th>Pros</th>
-            <th>Contras</th>
+            <th width="50%">Beneficios</th>
+            <th width="50%">Contras</th>
         </tr>
         </thead>
         <tbody>
@@ -26,12 +48,13 @@
             <td>
                 <ul class="text-small">
                     <li>Permite abstraer las estructuras repetitivas.</li>
-                    <li>Por lo anterior, realizar cambios es mucho mas fácil.</li>
+                    <li>Realizar cambios es mucho mas fácil.</li>
                 </ul>
             </td>
             <td>
                 <ul class="text-small">
                     <li>El servidor debe volver a procesar el sitio cada vez que es servido aún cuando este no cambia.</li>
+                    <li>Más expuesto a sufrir de alguna vulnerabilidad de seguridad</li>
                 </ul>
             </td>
         </tr>
